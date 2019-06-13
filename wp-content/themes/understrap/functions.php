@@ -25,6 +25,7 @@ $understrap_includes = array(
 	'/woocommerce.php',                     // Load WooCommerce functions.
 	'/editor.php',                          // Load Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
+	'/custom-post-type.php',								// Load Jordan's custom post types
 );
 
 foreach ( $understrap_includes as $file ) {

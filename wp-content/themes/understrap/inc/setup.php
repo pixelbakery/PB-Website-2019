@@ -91,7 +91,7 @@ if ( ! function_exists ( 'understrap_setup' ) ) {
 
 		// Set up the WordPress Theme logo feature.
 		add_theme_support( 'custom-logo' );
-		
+
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 
@@ -138,3 +138,15 @@ if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 		return $post_excerpt;
 	}
 }
+function wpb_remove_version() {
+return '';
+}
+add_filter('the_generator', 'wpb_remove_version');
+function remove_footer_admin () {
+
+echo 'Fueled by <a href="http://www.wordpress.org" target="_blank">WordPress</a> | WordPress Tutorials: <a href="https://www.wpbeginner.com" target="_blank">WPBeginner</a></p>';
+
+}
+
+add_filter('admin_footer_text', 'remove_footer_admin');
+remove_action('welcome_panel', 'wp_welcome_panel');

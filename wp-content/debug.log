@@ -1,0 +1,80 @@
+[13-Jun-2019 17:29:37 UTC] PHP Warning:  include(/app/public/wp-content/advanced-cache.php): failed to open stream: No such file or directory in /app/public/wp-settings.php on line 95
+[13-Jun-2019 17:29:37 UTC] PHP Stack trace:
+[13-Jun-2019 17:29:37 UTC] PHP   1. {main}() /app/public/wp-admin/admin-ajax.php:0
+[13-Jun-2019 17:29:37 UTC] PHP   2. require_once() /app/public/wp-admin/admin-ajax.php:22
+[13-Jun-2019 17:29:37 UTC] PHP   3. require_once() /app/public/wp-load.php:37
+[13-Jun-2019 17:29:37 UTC] PHP   4. require_once() /app/public/wp-config.php:99
+[13-Jun-2019 17:29:37 UTC] PHP Warning:  include(): Failed opening '/app/public/wp-content/advanced-cache.php' for inclusion (include_path='.:') in /app/public/wp-settings.php on line 95
+[13-Jun-2019 17:29:37 UTC] PHP Stack trace:
+[13-Jun-2019 17:29:37 UTC] PHP   1. {main}() /app/public/wp-admin/admin-ajax.php:0
+[13-Jun-2019 17:29:37 UTC] PHP   2. require_once() /app/public/wp-admin/admin-ajax.php:22
+[13-Jun-2019 17:29:37 UTC] PHP   3. require_once() /app/public/wp-load.php:37
+[13-Jun-2019 17:29:37 UTC] PHP   4. require_once() /app/public/wp-config.php:99
+[13-Jun-2019 17:29:37 UTC] PHP Warning:  include(/app/public/wp-content/advanced-cache.php): failed to open stream: No such file or directory in /app/public/wp-settings.php on line 95
+[13-Jun-2019 17:29:37 UTC] PHP Stack trace:
+[13-Jun-2019 17:29:37 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[13-Jun-2019 17:29:37 UTC] PHP   2. require_once() /app/public/wp-admin/post-new.php:10
+[13-Jun-2019 17:29:37 UTC] PHP   3. require_once() /app/public/wp-admin/admin.php:34
+[13-Jun-2019 17:29:37 UTC] PHP   4. require_once() /app/public/wp-load.php:37
+[13-Jun-2019 17:29:37 UTC] PHP   5. require_once() /app/public/wp-config.php:99
+[13-Jun-2019 17:29:37 UTC] PHP Warning:  include(): Failed opening '/app/public/wp-content/advanced-cache.php' for inclusion (include_path='.:') in /app/public/wp-settings.php on line 95
+[13-Jun-2019 17:29:37 UTC] PHP Stack trace:
+[13-Jun-2019 17:29:37 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[13-Jun-2019 17:29:37 UTC] PHP   2. require_once() /app/public/wp-admin/post-new.php:10
+[13-Jun-2019 17:29:37 UTC] PHP   3. require_once() /app/public/wp-admin/admin.php:34
+[13-Jun-2019 17:29:37 UTC] PHP   4. require_once() /app/public/wp-load.php:37
+[13-Jun-2019 17:29:37 UTC] PHP   5. require_once() /app/public/wp-config.php:99
+[13-Jun-2019 17:29:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /app/public/wp-settings.php:95) in /app/public/wp-includes/pluggable.php on line 1251
+[13-Jun-2019 17:29:37 UTC] PHP Stack trace:
+[13-Jun-2019 17:29:37 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[13-Jun-2019 17:29:37 UTC] PHP   2. require_once() /app/public/wp-admin/post-new.php:10
+[13-Jun-2019 17:29:37 UTC] PHP   3. require_once() /app/public/wp-admin/admin.php:34
+[13-Jun-2019 17:29:37 UTC] PHP   4. require_once() /app/public/wp-load.php:37
+[13-Jun-2019 17:29:37 UTC] PHP   5. require_once() /app/public/wp-config.php:99
+[13-Jun-2019 17:29:37 UTC] PHP   6. wp_not_installed() /app/public/wp-settings.php:155
+[13-Jun-2019 17:29:37 UTC] PHP   7. wp_redirect() /app/public/wp-includes/load.php:615
+[13-Jun-2019 17:29:37 UTC] PHP   8. header() /app/public/wp-includes/pluggable.php:1251
+[13-Jun-2019 17:29:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /app/public/wp-settings.php:95) in /app/public/wp-includes/pluggable.php on line 1254
+[13-Jun-2019 17:29:37 UTC] PHP Stack trace:
+[13-Jun-2019 17:29:37 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[13-Jun-2019 17:29:37 UTC] PHP   2. require_once() /app/public/wp-admin/post-new.php:10
+[13-Jun-2019 17:29:37 UTC] PHP   3. require_once() /app/public/wp-admin/admin.php:34
+[13-Jun-2019 17:29:37 UTC] PHP   4. require_once() /app/public/wp-load.php:37
+[13-Jun-2019 17:29:37 UTC] PHP   5. require_once() /app/public/wp-config.php:99
+[13-Jun-2019 17:29:37 UTC] PHP   6. wp_not_installed() /app/public/wp-settings.php:155
+[13-Jun-2019 17:29:37 UTC] PHP   7. wp_redirect() /app/public/wp-includes/load.php:615
+[13-Jun-2019 17:29:37 UTC] PHP   8. header() /app/public/wp-includes/pluggable.php:1254
+[13-Jun-2019 17:29:52 UTC] PHP Warning:  include(/app/public/wp-content/advanced-cache.php): failed to open stream: No such file or directory in /app/public/wp-settings.php on line 95
+[13-Jun-2019 17:29:52 UTC] PHP Stack trace:
+[13-Jun-2019 17:29:52 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[13-Jun-2019 17:29:52 UTC] PHP   2. require_once() /app/public/wp-admin/post-new.php:10
+[13-Jun-2019 17:29:52 UTC] PHP   3. require_once() /app/public/wp-admin/admin.php:34
+[13-Jun-2019 17:29:52 UTC] PHP   4. require_once() /app/public/wp-load.php:37
+[13-Jun-2019 17:29:52 UTC] PHP   5. require_once() /app/public/wp-config.php:99
+[13-Jun-2019 17:29:52 UTC] PHP Warning:  include(): Failed opening '/app/public/wp-content/advanced-cache.php' for inclusion (include_path='.:') in /app/public/wp-settings.php on line 95
+[13-Jun-2019 17:29:52 UTC] PHP Stack trace:
+[13-Jun-2019 17:29:52 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[13-Jun-2019 17:29:52 UTC] PHP   2. require_once() /app/public/wp-admin/post-new.php:10
+[13-Jun-2019 17:29:52 UTC] PHP   3. require_once() /app/public/wp-admin/admin.php:34
+[13-Jun-2019 17:29:52 UTC] PHP   4. require_once() /app/public/wp-load.php:37
+[13-Jun-2019 17:29:52 UTC] PHP   5. require_once() /app/public/wp-config.php:99
+[13-Jun-2019 17:29:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /app/public/wp-settings.php:95) in /app/public/wp-includes/pluggable.php on line 1251
+[13-Jun-2019 17:29:52 UTC] PHP Stack trace:
+[13-Jun-2019 17:29:52 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[13-Jun-2019 17:29:52 UTC] PHP   2. require_once() /app/public/wp-admin/post-new.php:10
+[13-Jun-2019 17:29:52 UTC] PHP   3. require_once() /app/public/wp-admin/admin.php:34
+[13-Jun-2019 17:29:52 UTC] PHP   4. require_once() /app/public/wp-load.php:37
+[13-Jun-2019 17:29:52 UTC] PHP   5. require_once() /app/public/wp-config.php:99
+[13-Jun-2019 17:29:52 UTC] PHP   6. wp_not_installed() /app/public/wp-settings.php:155
+[13-Jun-2019 17:29:52 UTC] PHP   7. wp_redirect() /app/public/wp-includes/load.php:615
+[13-Jun-2019 17:29:52 UTC] PHP   8. header() /app/public/wp-includes/pluggable.php:1251
+[13-Jun-2019 17:29:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /app/public/wp-settings.php:95) in /app/public/wp-includes/pluggable.php on line 1254
+[13-Jun-2019 17:29:52 UTC] PHP Stack trace:
+[13-Jun-2019 17:29:52 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[13-Jun-2019 17:29:52 UTC] PHP   2. require_once() /app/public/wp-admin/post-new.php:10
+[13-Jun-2019 17:29:52 UTC] PHP   3. require_once() /app/public/wp-admin/admin.php:34
+[13-Jun-2019 17:29:52 UTC] PHP   4. require_once() /app/public/wp-load.php:37
+[13-Jun-2019 17:29:52 UTC] PHP   5. require_once() /app/public/wp-config.php:99
+[13-Jun-2019 17:29:52 UTC] PHP   6. wp_not_installed() /app/public/wp-settings.php:155
+[13-Jun-2019 17:29:52 UTC] PHP   7. wp_redirect() /app/public/wp-includes/load.php:615
+[13-Jun-2019 17:29:52 UTC] PHP   8. header() /app/public/wp-includes/pluggable.php:1254
