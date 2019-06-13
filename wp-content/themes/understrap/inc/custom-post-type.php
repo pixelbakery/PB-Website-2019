@@ -92,6 +92,46 @@ function awards_tax_issuer() {
 		'labels'                     => $labels,
 		'hierarchical'               => false,
 		'public'                     => true,
+		'show_ui'                    => false,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => false,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'awards_issuer', array( 'awards_' ), $args );
+
+}
+add_action( 'init', 'awards_tax_issuer', 0 );
+
+}
+if ( ! function_exists( 'awards_tax_issuer' ) ) {
+
+// Register Custom Taxonomy
+function awards_tax_issuer() {
+
+	$labels = array(
+		'name'                       => 'Award Year',
+		'singular_name'              => 'Award Year',
+		'menu_name'                  => 'Award Year',
+		'all_items'                  => 'All Years',
+		'new_item_name'              => 'New Award Year',
+		'add_new_item'               => 'Add New Award Year',
+		'edit_item'                  => 'Edit Award Year',
+		'update_item'                => 'Update Award Year',
+		'view_item'                  => 'View Award Year',
+		'separate_items_with_commas' => 'Separate Issuers with commas',
+		'add_or_remove_items'        => 'Add or remove Issuers',
+		'choose_from_most_used'      => 'Choose from the most used',
+		'popular_items'              => 'Popular Issuers',
+		'search_items'               => 'Search Terms',
+		'not_found'                  => 'No Issuer Found',
+		'no_terms'                   => 'No Issuers',
+		'items_list'                 => 'Award Issuer List',
+		'items_list_navigation'      => 'Award Issuer list navigation',
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
 		'show_ui'                    => true,
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => false,
