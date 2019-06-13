@@ -74,3 +74,70 @@ if ( ! defined( 'ABSPATH' ) )
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+/**
+ * Custom WordPress configurations on "wp-config.php" file.
+ *
+ * This file has the following configurations: MySQL settings, Table Prefix, Secret Keys, WordPress Language, ABSPATH and more.
+ * For more information visit {@link https://codex.wordpress.org/Editing_wp-config.php Editing wp-config.php} Codex page.
+ * Created using {@link http://generatewp.com/wp-config/ wp-config.php File Generator} on GenerateWP.com.
+ *
+ * @package WordPress
+ * @generator GenerateWP.com
+ */
+
+
+/* Custom WordPress URL. */
+define( 'WP_SITEURL',     'https://pixelbakery.co' );
+define( 'WP_HOME',        '/' );
+
+
+/* Specify maximum number of Revisions. */
+define( 'WP_POST_REVISIONS', '50' );
+/* Media Trash. */
+define( 'MEDIA_TRASH', true );
+
+
+/* Multisite. */
+define( 'WP_ALLOW_MULTISITE', false );
+
+
+/* WordPress debug mode for developers. */
+define( 'WP_DEBUG',         true );
+define( 'WP_DEBUG_LOG',     true );
+define( 'WP_DEBUG_DISPLAY', true );
+define( 'SCRIPT_DEBUG',     true );
+define( 'SAVEQUERIES',      false );
+
+
+/* PHP Memory */
+define( 'WP_MEMORY_LIMIT', '512M' );
+define( 'WP_MAX_MEMORY_LIMIT', '1024M' );
+
+
+/* WordPress Cache */
+define( 'WP_CACHE', true );
+
+
+/* Compression */
+define( 'COMPRESS_CSS',        true );
+define( 'COMPRESS_SCRIPTS',    true );
+define( 'CONCATENATE_SCRIPTS', true );
+define( 'ENFORCE_GZIP',        true );
+
+
+/* FTP */
+define( 'FTP_USER', 'pbgumgum' );
+define( 'FTP_PASS', 'Ef@3{]n8M,{PavQh*;' );
+define( 'FTP_HOST', 'pixelbakery.co' );
+
+
+/* CRON */
+define( 'DISABLE_WP_CRON',      'false' );
+define( 'ALTERNATE_WP_CRON',    'false' );
+
+
+/* Updates */
+define( 'WP_AUTO_UPDATE_CORE', true );
+define( 'DISALLOW_FILE_MODS', false );
+define( 'DISALLOW_FILE_EDIT', true );
