@@ -88,7 +88,7 @@ require_once ABSPATH . 'wp-settings.php';
 
 
 /* Custom WordPress URL. */
-define( 'WP_SITEURL',     'https://pixelbakery.co' );
+define( 'WP_SITEURL',     'https://pixelbakery.local' );
 define( 'WP_HOME',        '/' );
 
 

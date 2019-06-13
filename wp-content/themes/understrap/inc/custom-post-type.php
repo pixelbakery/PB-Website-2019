@@ -61,3 +61,45 @@ function cpt_awards() {
 add_action( 'init', 'cpt_awards', 0 );
 
 }
+if ( ! function_exists( 'awards_tax_issuer' ) ) {
+
+// Register Custom Taxonomy
+function awards_tax_issuer() {
+
+	$labels = array(
+		'name'                       => 'Award Issuers',
+		'singular_name'              => 'Award Issuer',
+		'menu_name'                  => 'Award Issuer',
+		'all_items'                  => 'All Issuers',
+		'parent_item'                => 'Parent Issuer',
+		'parent_item_colon'          => 'Parent Issuer:',
+		'new_item_name'              => 'New Award Issuer',
+		'add_new_item'               => 'Add New Award Issuer',
+		'edit_item'                  => 'Edit Award Issuer',
+		'update_item'                => 'Update Award Issuer',
+		'view_item'                  => 'View Award Issuer',
+		'separate_items_with_commas' => 'Separate Issuers with commas',
+		'add_or_remove_items'        => 'Add or remove Issuers',
+		'choose_from_most_used'      => 'Choose from the most used',
+		'popular_items'              => 'Popular Issuers',
+		'search_items'               => 'Search Terms',
+		'not_found'                  => 'No Issuer Found',
+		'no_terms'                   => 'No Issuers',
+		'items_list'                 => 'Award Issuer List',
+		'items_list_navigation'      => 'Award Issuer list navigation',
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => false,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'awards_issuer', array( 'awards_' ), $args );
+
+}
+add_action( 'init', 'awards_tax_issuer', 0 );
+
+}

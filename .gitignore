@@ -1,3 +1,5 @@
 
 wp-content/uploads/2019/06/sage-master.zip
 .DS_Store
+*.txt
+wp-content/plugins/classic-editor/js/block-editor-plugin.js
