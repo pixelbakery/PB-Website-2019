@@ -83,8 +83,8 @@ function create_positiontype_tax() {
 		'public' => true,
 		'publicly_queryable' => true,
 		'show_ui' => true,
-		'show_in_menu' => true,
-		'show_in_nav_menus' => true,
+		'show_in_menu' => false,
+		'show_in_nav_menus' => false,
 		'show_tagcloud' => false,
 		'show_in_quick_edit' => true,
 		'show_admin_column' => false,
@@ -96,10 +96,10 @@ function create_positiontype_tax() {
 add_action( 'init', 'create_positiontype_tax' );
 
 //Position Status Taxonomy(i.e is it filled or unfilled)
-function create_careers_positiontype_tax() {
+function create_careers_filled_tax() {
 
 	$labels = array(
-		'name'                       => 'Position Statuses',
+		'name'                       => 'Position Status',
 		'singular_name'              => 'Position Status',
 		'menu_name'                  => 'Position Status',
 		'all_items'                  => 'All Items',
@@ -124,13 +124,97 @@ function create_careers_positiontype_tax() {
 		'labels'                     => $labels,
 		'hierarchical'               => true,
 		'public'                     => true,
-		'show_ui'                    => false,
+		'show_ui'                    => true,
 		'show_admin_column'          => true,
-		'show_in_nav_menus'          => false,
+		'show_in_menu' 								=> false,
+		'show_in_nav_menus' 					=> false,
 		'show_tagcloud'              => false,
 		'show_in_rest'               => true,
 	);
-	register_taxonomy( 'careers_filled', array( 'careers' ), $args );
+	register_taxonomy( 'careers_filled', array( 'cpt_careers' ), $args );
 
 }
-add_action( 'init', 'create_careers_positiontype_tax', 0 );
+add_action( 'init', 'create_careers_filled_tax', 0 );
+
+
+//Position Times Taxonomy(i.e is it full-time salary or part-time hourly)
+function create_careers_time_tax( )
+{
+    $labels = array(
+        'name'                       => _x( 'Time Commitments', 'Taxonomy General Name', '' ),
+        'singular_name'              => _x( 'Time Commitment', 'Taxonomy Singular Name', '' ),
+        'menu_name'                  => __( 'Time Commitment', '' ),
+        'all_items'                  => __( 'All Times', '' ),
+        'parent_item'                => __( 'Parent Time', '' ),
+        'parent_item_colon'          => __( 'Parent Time Colon:', '' ),
+        'new_item_name'              => __( 'New Time', '' ),
+        'add_new_item'               => __( 'Add New Time', '' ),
+        'edit_item'                  => __( 'Edit Time', '' ),
+        'update_item'                => __( 'Update Time', '' ),
+        'view_item'                  => __( 'View Time', '' ),
+        'separate_items_with_commas' => __( 'Separate Items With Commas', '' ),
+        'popular_items'              => __( 'Popular Times', '' ),
+        'search_items'               => __( 'Search Times', '' ),
+        'not_found'                  => __( 'Not Found', '' ),
+    );
+
+    $args = array(
+        'labels'                     => $labels,
+        'hierarchical'               => true,
+        'public'                     => true,
+        'show_ui'                    => true,
+        'show_in_menu'               => false,
+        'show_admin_column'          => false,
+        'show_in_nav_menus'          => false,
+        'show_tagcloud'              => false,
+        'show_in_quick_edit'         => true,
+        'description'                => 'Full Time vs Part Time',
+        'sort'                       => true,
+        'capabilities'               => array(
+                                     ),
+    );
+
+    register_taxonomy( 'careers_time', array( 'cpt_careers' ), $args );
+}
+add_action( 'init', 'create_careers_time_tax');
+
+// Position Times Taxonomy(i.e apprenticeship, freelance, junior position, senior position)
+function create_careers_poslevel_tax( )
+{
+    $labels = array(
+        'name'                       => _x( 'Position Levels', 'Taxonomy General Name', '' ),
+        'singular_name'              => _x( 'Position Level', 'Taxonomy Singular Name', '' ),
+        'menu_name'                  => __( 'Position Levels', '' ),
+        'all_items'                  => __( 'All Position Levels', '' ),
+        'parent_item'                => __( 'Parent Position Level', '' ),
+        'parent_item_colon'          => __( 'Parent Position Levels Colon:', '' ),
+        'new_item_name'              => __( 'New Position Level', '' ),
+        'add_new_item'               => __( 'Add New Position Level', '' ),
+        'edit_item'                  => __( 'Edit Position Levels', '' ),
+        'update_item'                => __( 'Update Position Level', '' ),
+        'view_item'                  => __( 'View Position Level', '' ),
+        'separate_items_with_commas' => __( 'Separate Position Levels With Commas', '' ),
+        'popular_items'              => __( 'Popular Position Levels', '' ),
+        'search_items'               => __( 'Search Position Levels', '' ),
+        'not_found'                  => __( 'Not Found', '' ),
+    );
+
+    $args = array(
+        'labels'                     => $labels,
+        'hierarchical'               => true,
+        'public'                     => true,
+        'show_ui'                    => true,
+        'show_in_menu'               => false,
+        'show_admin_column'          => false,
+        'show_in_nav_menus'          => false,
+        'show_tagcloud'              => false,
+        'show_in_quick_edit'         => true,
+        'description'                => 'apprenticeship, freelance, junior position, senior position',
+        'sort'                       => true,
+        'capabilities'               => array(
+                                     ),
+    );
+
+    register_taxonomy( 'careers_position_level', array( 'cpt_careers' ), $args );
+}
+add_action( 'init', 'create_careers_poslevel_tax');
