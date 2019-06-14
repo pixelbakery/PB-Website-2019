@@ -94,3 +94,43 @@ function create_positiontype_tax() {
 
 }
 add_action( 'init', 'create_positiontype_tax' );
+
+//Position Status Taxonomy(i.e is it filled or unfilled)
+function create_careers_positiontype_tax() {
+
+	$labels = array(
+		'name'                       => 'Position Statuses',
+		'singular_name'              => 'Position Status',
+		'menu_name'                  => 'Position Status',
+		'all_items'                  => 'All Items',
+		'parent_item'                => 'Parent Item',
+		'parent_item_colon'          => 'Parent Item:',
+		'new_item_name'              => '',
+		'add_new_item'               => '',
+		'edit_item'                  => 'Edit Status',
+		'update_item'                => 'Update Status',
+		'view_item'                  => 'View Status',
+		'separate_items_with_commas' => 'Separate items with commas',
+		'add_or_remove_items'        => 'Add or remove Status',
+		'choose_from_most_used'      => '',
+		'popular_items'              => '',
+		'search_items'               => 'Search Status',
+		'not_found'                  => 'Not Found',
+		'no_terms'                   => 'No Status',
+		'items_list'                 => 'Status list',
+		'items_list_navigation'      => '',
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => false,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => false,
+		'show_tagcloud'              => false,
+		'show_in_rest'               => true,
+	);
+	register_taxonomy( 'careers_filled', array( 'careers' ), $args );
+
+}
+add_action( 'init', 'create_careers_positiontype_tax', 0 );
