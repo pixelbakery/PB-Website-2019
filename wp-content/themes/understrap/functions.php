@@ -31,6 +31,7 @@ $understrap_includes = array(
 	'/custom-post-type-team.php',						// Load PB's team custom post types
 	'/custom-post-type-client-roster.php',	// Load PB's client roster custom post types
 	'/custom-post-type-press-mentions.php',	// Load PB's press mentions custom post types
+	'/custom-post-type-education.php',	// Load PB's press mentions custom post types
 );
 
 foreach ( $understrap_includes as $file ) {
