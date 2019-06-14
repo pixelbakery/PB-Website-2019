@@ -83,7 +83,7 @@ function create_positiontype_tax() {
 		'public' => true,
 		'publicly_queryable' => true,
 		'show_ui' => true,
-		'show_in_menu' => false,
+		'show_in_menu' => true,
 		'show_in_nav_menus' => false,
 		'show_tagcloud' => false,
 		'show_in_quick_edit' => true,
@@ -130,6 +130,7 @@ function create_careers_filled_tax() {
 		'show_in_nav_menus' 					=> false,
 		'show_tagcloud'              => false,
 		'show_in_rest'               => true,
+		'show_in_quick_edit'         => true,
 	);
 	register_taxonomy( 'careers_filled', array( 'cpt_careers' ), $args );
 
@@ -164,7 +165,7 @@ function create_careers_time_tax( )
         'public'                     => true,
         'show_ui'                    => true,
         'show_in_menu'               => false,
-        'show_admin_column'          => false,
+        'show_admin_column'          => true,
         'show_in_nav_menus'          => false,
         'show_tagcloud'              => false,
         'show_in_quick_edit'         => true,
@@ -204,8 +205,8 @@ function create_careers_poslevel_tax( )
         'hierarchical'               => true,
         'public'                     => true,
         'show_ui'                    => true,
-        'show_in_menu'               => false,
-        'show_admin_column'          => false,
+        'show_in_menu'               => true,
+        'show_admin_column'          => true,
         'show_in_nav_menus'          => false,
         'show_tagcloud'              => false,
         'show_in_quick_edit'         => true,
