@@ -87,11 +87,6 @@ require_once ABSPATH . 'wp-settings.php';
  */
 
 
-/* Custom WordPress URL. */
-define( 'WP_SITEURL',     'https://pixelbakery.local' );
-define( 'WP_HOME',        '/' );
-
-
 /* Specify maximum number of Revisions. */
 define( 'WP_POST_REVISIONS', '50' );
 /* Media Trash. */
@@ -117,27 +112,3 @@ define( 'WP_MAX_MEMORY_LIMIT', '1024M' );
 
 /* WordPress Cache */
 define( 'WP_CACHE', true );
-
-
-/* Compression */
-define( 'COMPRESS_CSS',        true );
-define( 'COMPRESS_SCRIPTS',    true );
-define( 'CONCATENATE_SCRIPTS', true );
-define( 'ENFORCE_GZIP',        true );
-
-
-/* FTP */
-define( 'FTP_USER', 'pbgumgum' );
-define( 'FTP_PASS', 'Ef@3{]n8M,{PavQh*;' );
-define( 'FTP_HOST', 'pixelbakery.co' );
-
-
-/* CRON */
-define( 'DISABLE_WP_CRON',      'false' );
-define( 'ALTERNATE_WP_CRON',    'false' );
-
-
-/* Updates */
-define( 'WP_AUTO_UPDATE_CORE', true );
-define( 'DISALLOW_FILE_MODS', false );
-define( 'DISALLOW_FILE_EDIT', true );

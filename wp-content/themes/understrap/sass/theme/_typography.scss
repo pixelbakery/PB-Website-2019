@@ -3,17 +3,22 @@
 
 // variable declaration in SCSS we use variables to keep style clean and easy to modify
 // if we use this variable to say 50 rules and want to change the color, we would change only this variable.
-$mycolor: #67A6A6;
+@import "../assets/gilroy.scss";
+h1, .h1{
 
-// in SCSS we nest
-nav {
-  // in CSS this was selected by nav a
-  a {
-    color: $mycolor !important;
-    // change a on hover example
-    // in CSS this was selected by nav a:hover
-    &:hover {
-      color: $brand-primary !important;
-    }
-  }
+}
+h2, .h2{
+
+}
+h3, .h3{
+
+}
+h4, .h4{
+
+}
+p{
+
+}
+a{
+
 }
